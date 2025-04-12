@@ -24,6 +24,9 @@ This is a Flask-based web application that generates **structured medical diagno
 ## 🚀 Demo Screenshot
 
 ![image](https://github.com/user-attachments/assets/a1968f3d-2621-49c0-8d25-fd74917eeb1c)
+![image](https://github.com/user-attachments/assets/2907b3cc-2c6d-439f-a605-c22f4c866415)
+![image](https://github.com/user-attachments/assets/d9b7fdfd-2b2d-4165-9059-c54822681cad)
+
 
 
 ---
