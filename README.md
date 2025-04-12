@@ -70,7 +70,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 ## 4✅ Step-by-Step: Using .env for the Flask Secret Key
-##1. 🗝️ Create a .env file in your project root
+## 1. 🗝️ Create a .env file in your project root
 
 ```ini
 # .env
