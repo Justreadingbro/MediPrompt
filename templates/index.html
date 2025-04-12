@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Diagnostics Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <!-- jsPDF library for PDF export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- Socket.IO client library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Healthcare Diagnostics Assistant</h1>
+      <p>Enter patient details and clinical observations to generate a preliminary diagnostic report.</p>
+    </header>
+    <main>
+      <form id="reportForm">
+        <textarea id="patientInfo"
+                  placeholder="Enter patient data (medical history, lab results, etc.)..."
+                  rows="8" required></textarea>
+        <div class="form-controls">
+          <label for="includeLab">
+            <input type="checkbox" id="includeLab" checked>
+            Include Lab Data
+          </label>
+          <button type="submit">Generate Report</button>
+        </div>
+      </form>
+      <section id="reportOutput" class="report" aria-live="polite"></section>
+      <div class="action-buttons">
+        <button id="copyReport">Copy Report</button>
+        <button id="exportPDF">Export Report to PDF</button>
+      </div>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
